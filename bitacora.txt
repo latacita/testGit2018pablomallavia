@@ -14,11 +14,17 @@
        commit -m "Paso 05"
 06     branch develop
 07     checkout -b feature/Ticket220
-
+09     add bitacora.txt
+       commit -m "Paso 09"
+10     checkout develop
+11     checkout -b feature/Ticket221
 13     add bitacora.txt
        checkout feature/Ticket220       commit or stash
        stash
        checkout feature/Ticket220
+15     add bitacora.txt
+       commit -m "Paso 15"
+16     checkout feature/Ticket221
 17     add bitacora.txt
        commit -m "Paso 18"              no dio error, pero no incluye los pasos 9 a 11
        revert "Paso 18"
