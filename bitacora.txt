@@ -44,3 +44,9 @@
 26     merge feature/Ticket221
        add bitacora.txt
        commit "Solucion conflictos fusion feature/Ticket221"
+28     add bitacora.txt
+       commit -m "Paso 28"
+29     tag Step29
+30     push                               Hecho con la herramienta SourcTree
+31     checkout feature/Ticket222
+32     checkout develop bitacora.txt
