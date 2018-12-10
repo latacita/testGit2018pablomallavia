@@ -50,3 +50,10 @@
 30     push                               Hecho con la herramienta SourcTree
 31     checkout feature/Ticket222
 32     checkout develop bitacora.txt
+34     add bitacora.txt
+       commit -m "Paso 34"
+35     git merge feature/Ticket222       Conflictos
+       add bitacora.txt
+       commit -m "Solucion conflictos fusion feature/Ticket222"
+36     checkout master
+       merge develop
