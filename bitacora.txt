@@ -19,4 +19,15 @@
        checkout feature/Ticket220       commit or stash
        stash
        checkout feature/Ticket220
-       
+17     add bitacora.txt
+       commit -m "Paso 18"              no dio error, pero no incluye los pasos 9 a 11
+       revert "Paso 18"
+       stash                            tuve que hacer stash porque hice cambios previamente
+       stash list
+       stash pop 1
+18     add bitacora.txt
+       commit -m "Paso 18"
+19     checkout develop
+20     branch feature/Ticket222
+21     checkout feature/Ticket220
+22     merge                            fast-forward
