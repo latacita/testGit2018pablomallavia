@@ -6,3 +6,8 @@
 
  Paso   Acción                       Notas
 ====== ============================ ================================
+01     clone URL
+03     add bitacora.txt
+       commit
+       push
+      
