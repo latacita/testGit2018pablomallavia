@@ -37,3 +37,10 @@
 20     branch feature/Ticket222
 21     checkout feature/Ticket220
 22     merge                            fast-forward
+23     add bitacora.txt
+       commit -m "Paso 23"
+24     checkout develop
+25     merge feature/Ticket220
+26     merge feature/Ticket221
+       add bitacora.txt
+       commit "Solucion conflictos fusion feature/Ticket221"
