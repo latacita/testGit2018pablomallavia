@@ -10,4 +10,43 @@
 03     add bitacora.txt
        commit
        push
-      
+05     add bitacora.txt
+       commit -m "Paso 05"
+06     branch develop
+07     checkout -b feature/Ticket220
+09     add bitacora.txt
+       commit -m "Paso 09"
+10     checkout develop
+11     checkout -b feature/Ticket221
+13     add bitacora.txt
+       checkout feature/Ticket220       commit or stash
+       stash
+       checkout feature/Ticket220
+15     add bitacora.txt
+       commit -m "Paso 15"
+16     checkout feature/Ticket221
+17     add bitacora.txt
+       commit -m "Paso 18"              no dio error, pero no incluye los pasos 9 a 11
+       revert "Paso 18"
+       stash                            tuve que hacer stash porque hice cambios previamente
+       stash list
+       stash pop 1
+18     add bitacora.txt
+       commit -m "Paso 18"
+19     checkout develop
+20     branch feature/Ticket222
+21     checkout feature/Ticket220
+22     merge                            fast-forward
+23     add bitacora.txt
+       commit -m "Paso 23"
+24     checkout develop
+25     merge feature/Ticket220
+26     merge feature/Ticket221
+       add bitacora.txt
+       commit "Solucion conflictos fusion feature/Ticket221"
+28     add bitacora.txt
+       commit -m "Paso 28"
+29     tag Step29
+30     push                               Hecho con la herramienta SourcTree
+31     checkout feature/Ticket222
+32     checkout develop bitacora.txt
