@@ -10,4 +10,6 @@
 03     add bitacora.txt
        commit
        push
-      
+15     add bitacora.txt
+       commit -m "Paso 15"
+16     checkout feature/Ticket221       
